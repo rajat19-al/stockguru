@@ -11,10 +11,10 @@ import com.employeeapp.model.Employee;
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
-	String addEmployee(Employee employee);
-	String updateEmployee (long id);
-	String deleteEmployee (long id);
-	Optional<Employee> findById(long id);
-	Optional<List<Employee>> getEmployees();
-	Optional<List<Employee>> findByOrganizationId(long id);
+//	String addEmployee(Employee employee);
+//	String updateEmployee (long id);
+//	String deleteEmployee (long id);
+//	Optional<Employee> findById(long id);
+//	Optional<List<Employee>> getEmployees();
+//	Optional<List<Employee>> findByOrganizationId(long id);
 }

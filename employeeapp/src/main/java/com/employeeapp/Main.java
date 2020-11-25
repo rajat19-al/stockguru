@@ -4,7 +4,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.employeeapp.configuration.DBConfig;
 import com.employeeapp.model.Employee;
-import com.employeeapp.repository.EmployeeRepository;
 import com.employeeapp.service.EmployeeService;
 
 

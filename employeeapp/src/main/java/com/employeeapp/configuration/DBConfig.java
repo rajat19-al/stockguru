@@ -32,7 +32,7 @@ public class DBConfig {
     @Bean
     //@Lazy
     public DataSource getMySQLDataSource() {
-        System.out.println("hello from punjam");
+        System.out.println("hello from Rajat");
         DriverManagerDataSource dataSource = new  DriverManagerDataSource();
 
         dataSource.setDriverClassName(environment.getProperty("db.driver"));
@@ -55,7 +55,7 @@ public class DBConfig {
         properties.setProperty("hibernate.hbm2ddl.auto", environment.getProperty("hibernate.hbm2ddl.auto"));
         properties.setProperty("hibernate.dialect", environment.getProperty("hibernate.dialect"));
         entityManagerFactoryBean.setPersistenceProviderClass(HibernatePersistenceProvider.class);
-        entityManagerFactoryBean.setPackagesToScan("com.tcs.assignment.model");
+        entityManagerFactoryBean.setPackagesToScan("com.employeeapp.model");
         entityManagerFactoryBean.setJpaProperties(properties);
 
         return entityManagerFactoryBean;
